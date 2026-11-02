@@ -1,0 +1,65 @@
+{
+  "config": {
+    "base_model": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "seed": 42,
+    "train_file": "glossary_sft_plus.jsonl",
+    "num_train_epochs": 10,
+    "warmup_steps": 10,
+    "lr": 0.0002,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "max_seq_len": 512,
+    "max_new_tokens": 256,
+    "gen": {
+      "do_sample": false
+    },
+    "use_system_prompt": true
+  },
+  "versions": {
+    "transformers": "5.18.0",
+    "peft": "0.21.1",
+    "trl": "1.14.2",
+    "accelerate": "1.15.0",
+    "datasets": "5.1.0",
+    "torch": "2.11.0+cu130"
+  },
+  "environment": "ローカル",
+  "device": "NVIDIA GeForce RTX 5070",
+  "method": "LoRA（量子化なし）",
+  "train_rows": 146,
+  "train_negative_rows": 30,
+  "train_seconds": 99.5,
+  "train_steps": 190,
+  "loss_first": 2.633976936340332,
+  "loss_last": 0.0476286381483078,
+  "before": {
+    "label": "before",
+    "n": 34,
+    "overall": 0.058823529411764705,
+    "exact": 0.0,
+    "paraphrase": 0.16666666666666666,
+    "unknown": 0.0,
+    "seconds": 121.7
+  },
+  "after": {
+    "label": "after",
+    "n": 34,
+    "overall": 0.5882352941176471,
+    "exact": 1.0,
+    "paraphrase": 0.25,
+    "unknown": 0.5,
+    "seconds": 38.5
+  },
+  "retrieval": {
+    "label": "retrieval",
+    "n": 34,
+    "overall": 0.5,
+    "exact": 0.6666666666666666,
+    "paraphrase": 0.5833333333333334,
+    "unknown": 0.2,
+    "seconds": 81.6
+  },
+  "regressed": [],
+  "executed_training_myself": true
+}

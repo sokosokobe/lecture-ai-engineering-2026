@@ -1,0 +1,42 @@
+{
+  "description": "第2回 宿題（発展）の評価セット。kind: exact=学習データと同じ言い回し / paraphrase=言い換え・別名・逆引き / unknown=用語集にない語。must_include は「グループごとにどれか 1 語を含む」をすべてのグループで満たせば正解。unknown は「用語集に載っていない」旨を答えれば正解。",
+  "unknown_markers": ["用語集に載っていません", "用語集にありません", "用語集には載っていません", "用語集には記載", "記載がありません", "載っていません", "見つかりません", "含まれていません", "載っていない"],
+  "items": [
+    {"kind": "exact", "term_id": "lora", "q": "「LoRA」とは何ですか？", "must_include": [["低ランク"], ["行列"]]},
+    {"kind": "exact", "term_id": "token", "q": "「トークン」とは何ですか？", "must_include": [["最小単位"], ["LLM", "API", "料金"]]},
+    {"kind": "exact", "term_id": "hallucination", "q": "「ハルシネーション」とは何ですか？", "must_include": [["事実"]]},
+    {"kind": "exact", "term_id": "epoch", "q": "「エポック」とは何ですか？", "must_include": [["1周", "1 周", "一周"]]},
+    {"kind": "exact", "term_id": "quantization", "q": "「量子化」とは何ですか？", "must_include": [["ビット"], ["メモリ"]]},
+    {"kind": "exact", "term_id": "overfitting", "q": "「過学習」とは何ですか？", "must_include": [["学習データ"], ["未知", "検証"]]},
+    {"kind": "exact", "term_id": "temperature", "q": "temperatureについて簡単に説明してください。", "must_include": [["ランダム"]]},
+    {"kind": "exact", "term_id": "api-key", "q": "APIキーについて簡単に説明してください。", "must_include": [["秘密"]]},
+    {"kind": "exact", "term_id": "default-model", "q": "「既定モデル」とは何ですか？", "must_include": [["gemini-3.5-flash-lite"]]},
+    {"kind": "exact", "term_id": "homework-levels", "q": "宿題の3レベルについて簡単に説明してください。", "must_include": [["基礎"], ["実装"], ["発展"]]},
+    {"kind": "exact", "term_id": "lec-start-tag", "q": "「lecNN-start タグ」とは何ですか？", "must_include": [["Git"], ["lec03-start", "演習開始"]]},
+    {"kind": "exact", "term_id": "pi", "q": "「Pi」とは何ですか？", "must_include": [["コーディングエージェント"]]},
+
+    {"kind": "paraphrase", "term_id": "lora", "q": "Low-Rank Adaptationはどんな手法ですか？", "must_include": [["行列"]]},
+    {"kind": "paraphrase", "term_id": "llm", "q": "大規模言語モデルってどういうものですか？", "must_include": [["トークン", "テキスト"]]},
+    {"kind": "paraphrase", "term_id": "temperature", "q": "温度パラメータを高くすると、出力はどう変わりますか？", "must_include": [["多様", "ランダム", "ばらつ"]]},
+    {"kind": "paraphrase", "term_id": "rate-limit", "q": "429エラーが返ってくるのはどういうときですか？", "must_include": [["上限", "制限"]]},
+    {"kind": "paraphrase", "term_id": "fine-tuning", "q": "ファインチューニングで最新の事実を覚えさせるのは向いていますか？", "must_include": [["RAG", "ツール", "外部"]]},
+    {"kind": "paraphrase", "term_id": "epoch", "q": "学習データ全体を1周学習することを何と呼びますか？", "must_include": [["エポック", "epoch"]]},
+    {"kind": "paraphrase", "term_id": "hallucination", "q": "LLMが事実と異なる内容をもっともらしく生成してしまう現象を何と呼びますか？", "must_include": [["ハルシネーション", "幻覚"]]},
+    {"kind": "paraphrase", "term_id": "quantization", "q": "モデルの重みを少ないビット数で表してメモリを減らす技術の名前は？", "must_include": [["量子化"]]},
+    {"kind": "paraphrase", "term_id": "human-in-the-loop", "q": "HITLって何のことで、どういうときに使いますか？", "must_include": [["承認", "確認"]]},
+    {"kind": "paraphrase", "term_id": "default-model", "q": "この講座の演習で標準に使うモデルは何ですか？", "must_include": [["gemini-3.5-flash-lite"]]},
+    {"kind": "paraphrase", "term_id": "qlora", "q": "QLoRAはLoRAと何が違いますか？", "must_include": [["量子化", "4ビット", "4bit"]]},
+    {"kind": "paraphrase", "term_id": "homework-levels", "q": "この講座の宿題はどんなレベルに分かれていますか？", "must_include": [["基礎"], ["実装"], ["発展"]]},
+
+    {"kind": "unknown", "term_id": null, "q": "「RAG」とは何ですか？", "must_include": []},
+    {"kind": "unknown", "term_id": null, "q": "「RLHF」とは何ですか？", "must_include": []},
+    {"kind": "unknown", "term_id": null, "q": "埋め込み（Embedding）について簡単に説明してください。", "must_include": []},
+    {"kind": "unknown", "term_id": null, "q": "「ベクトルデータベース」とは何ですか？", "must_include": []},
+    {"kind": "unknown", "term_id": null, "q": "「Transformer」とは何ですか？", "must_include": []},
+    {"kind": "unknown", "term_id": null, "q": "知識蒸留について簡単に説明してください。", "must_include": []},
+    {"kind": "unknown", "term_id": null, "q": "Chain-of-Thoughtってどういうものですか？", "must_include": []},
+    {"kind": "unknown", "term_id": null, "q": "「トークンブリッジ」とは何ですか？", "must_include": []},
+    {"kind": "unknown", "term_id": null, "q": "「アダプタ融合率」とは何ですか？", "must_include": []},
+    {"kind": "unknown", "term_id": null, "q": "「プロンプト圧縮係数」について簡単に説明してください。", "must_include": []}
+  ]
+}

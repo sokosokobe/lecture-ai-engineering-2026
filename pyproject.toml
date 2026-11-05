@@ -12,6 +12,8 @@ dependencies = [
 
 [dependency-groups]
 dev = ["pytest>=8"]
+# 第3回 宿題（発展a）: 同じエージェントを Google ADK で作り直す。uv sync --group adk で入れる
+adk = ["google-adk==2.13.0"]
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
